@@ -1,0 +1,12 @@
+{
+    "name": "ArduinoList",
+    "keywords": "pattern",
+    "description": "An useful list library for Arduino supporting remove_if, for_each, iterator operations",
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/abhisheksafui/ArduinoList.git"
+    },
+    "frameworks": "arduino",
+    "platforms": "*"
+}
