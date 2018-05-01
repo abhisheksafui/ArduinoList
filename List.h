@@ -41,12 +41,23 @@ protected:
 
     if (first == node) {
       first = next;
-      first->prev = nullptr;
-    } else {
-      prev->next = next;
+    }
+    
+    if(last == node) {
+      last = prev;
+    }
+    
+    if(next != nullptr){
       next->prev = prev;
     }
+    
+    if(prev != nullptr){
+      prev->next = next;
+    }
+    
+    
     delete node;
+    itemCount --;
     return next;
   }
 
@@ -166,6 +177,19 @@ public:
     return itemCount;
   }
 
+  bool isEmpty(){
+    return size() == 0;
+  }
+  
+  T pop_front(){
+    iterator it = begin();
+    if(it.node == nullptr){
+      return T();
+    }
+    T tmp = *it;
+    remove(it);
+    return tmp;
+  }
   /* If size() is zero then front return garbage */
   T front() {
     if (first) {
