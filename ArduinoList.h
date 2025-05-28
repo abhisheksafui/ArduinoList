@@ -5,14 +5,15 @@
  */
 
 /* 
- * File:   List.h
- * Author: abhi
+ * File:   ArduinoList.h
+ * Author: Abhishek
  *
  * Created on 29 April, 2018, 11:29 AM
+ * Updated on 19 May, 2025, 00:10 AM
  */
 
-#ifndef LIST_H
-#define LIST_H
+#ifndef __ARDUINO_LISH_H__
+#define __ARDUINO_LISH_H__
 #include <functional>
 
 template <typename T> class ArduinoListNode {
