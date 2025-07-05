@@ -166,11 +166,11 @@ public:
     itemCount++;
   }
   
-  iterator begin(){
+  iterator IRAM_ATTR begin(){
     return first;
   }
   
-  iterator end(){
+  iterator IRAM_ATTR end(){
     return last->next;
   }
 
